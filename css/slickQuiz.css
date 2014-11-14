@@ -8,7 +8,7 @@
 .backToQuestion,
 .questions li.question,
 .questions li.question .responses,
-.questions li.question .responses .test-success,
+.questions li.question .responses .text-success,
 .questions li.question .responses .text-error,
 .quizResults {
     display: none;

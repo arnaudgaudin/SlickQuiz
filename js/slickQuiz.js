@@ -64,7 +64,7 @@
             completeClass          = 'complete',
             correctClass           = 'correctResponse',
             incorrectClass         = 'incorrectResponse',
-            correctResponseClass   = 'test-success',
+            correctResponseClass   = 'text-success',
             incorrectResponseClass = 'text-error',
             checkAnswerClass       = 'checkAnswer',
             nextQuestionClass      = 'nextQuestion',
