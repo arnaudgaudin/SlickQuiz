@@ -5,7 +5,7 @@ html {
     background: #eee;
 }
 
-body {
+/*body {
     width: 800px;
     margin: 0 auto;
     border: 2px solid #ccc;
@@ -16,7 +16,7 @@ body {
     font-size: 16px;
     color: #353535;
     line-height: 1.5em;
-}
+}*/
 
 h1,h2,h3,h4,h5,h6 {font-weight: bold;}
 
