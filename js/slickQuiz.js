@@ -211,7 +211,7 @@
 
                 // add retry button to results view, if enabled
                 if (plugin.config.tryAgainText && plugin.config.tryAgainText !== '') {
-                    $quizResultsCopy.append('<p><a class="button ' + tryAgainClass + '" href="#">' + plugin.config.tryAgainText + '</a></p>');
+                    $quizResultsCopy.append('<p><a class="btn btn-primary ' + tryAgainClass + '" href="#">' + plugin.config.tryAgainText + '</a></p>');
                 }
 
                 // Setup questions
@@ -306,7 +306,7 @@
 
                         // Appends check answer / back / next question buttons
                         if (plugin.config.backButtonText && plugin.config.backButtonText !== '') {
-                            questionHTML.append('<a href="#" class="button ' + backToQuestionClass + '">' + plugin.config.backButtonText + '</a>');
+                            questionHTML.append('<a href="#" class="btn btn-primary ' + backToQuestionClass + '">' + plugin.config.backButtonText + '</a>');
                         }
 
                         var nextText = plugin.config.nextQuestionText;
@@ -316,10 +316,10 @@
 
                         // If we're not showing responses per question, show next question button and make it check the answer too
                         if (!plugin.config.perQuestionResponseMessaging) {
-                            questionHTML.append('<a href="#" class="button ' + nextQuestionClass + ' ' + checkAnswerClass + '">' + nextText + '</a>');
+                            questionHTML.append('<a href="#" class="btn btn-primary ' + nextQuestionClass + ' ' + checkAnswerClass + '">' + nextText + '</a>');
                         } else {
-                            questionHTML.append('<a href="#" class="button ' + nextQuestionClass + '">' + nextText + '</a>');
-                            questionHTML.append('<a href="#" class="button ' + checkAnswerClass + '">' + plugin.config.checkAnswerText + '</a>');
+                            questionHTML.append('<a href="#" class="btn btn-primary ' + nextQuestionClass + '">' + nextText + '</a>');
+                            questionHTML.append('<a href="#" class="btn btn-primary ' + checkAnswerClass + '">' + plugin.config.checkAnswerText + '</a>');
                         }
 
                         // Append question & answers to quiz
@@ -626,7 +626,7 @@
                 $quizArea.fadeOut(300, function() {
                     // If response messaging is set to show upon quiz completion, show it now
                     if (plugin.config.completionResponseMessaging) {
-                        $(_element + ' .button:not(' + _tryAgainBtn + '), ' + _element + ' ' + _questionCount).hide();
+                        $(_element + ' .btn:not(' + _tryAgainBtn + '), ' + _element + ' ' + _questionCount).hide();
                         $(_element + ' ' + _question + ', ' + _element + ' ' + _answers + ', ' + _element + ' ' + _responses).show();
                         $quizResults.append($(_element + ' ' + _questions)).fadeIn(500, kN(key,1));
                     } else {
